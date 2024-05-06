@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* navbar CSS */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.css-lsvjyt-MuiPaper-root{
+  border-radius: 0px !important;
+}
+.navbar-toggler {
+  height: auto;
+  width: auto;
+}
+.navbar-toggler-icon {
+  font-size: small;
+}
+
+/* Hero CSS */
+
+.hero {
+  background-color: #f7f7f7;
+  max-height: 85vh;
+  overflow: hidden;
+}
+.hero-text {
+  padding: 1.8rem 0px;
+  margin-left: 50px;
+  color: black;
+}
+.hero h1 {
+  line-height: 80px;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+.hero h1 span:first-child {
+  background-color: #004743;
+  color: white;
+}
+
+.hero h1 span:nth-child(2) {
+  background-color: #fbd103;
+  color: white;
+}
+.hero h1 span:first-child,
+.hero h1 span:nth-child(2) {
+  padding: 0px 16px;
+}
+.hero > * > div {
+  margin-top: 8px;
+}
+.shop-button {
+  font-family: inherit !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  background-color: #004743 !important;
+  border-radius: 1000px !important;
+  height: 40px !important;
+  width: 150px !important;
+}
+
+.hero-img {
+  position: relative;
+}
+.hero-img img {
+  filter: drop-shadow(-30px 0px 10px rgba(0, 0, 0, 0.321));
+  overflow: visible;
+  margin-left: 50px;
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 840px) {
+  .hero-text{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 546px) {
+  .hero-text {
+    margin: 0;
+  }
+  .hero-text h1 {
+    line-height: 55px;
+    font-size: 2em;
+  }
+}
+@media (max-width: 564px) {
+  .hero {
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    background-image: url(./../assest/hero2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .hero .hero-text {
+    color: rgb(255, 255, 255);
+  }
+  .hero h1 span:first-child {
+    background-color: #004743;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 71, 67, 0.534);
+    z-index: -1;
+  }
+}
+
+
+/* Sales Banner CSS */
+
+.SaleBanner{
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.order-btn{
+  background-color: white !important;
+  color: black !important;
+  font-family: inherit !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  border-radius: 1000px !important;
+  height: 40px !important;
+  width: 150px !important;
+}
+
+
+/* Kid Banner CSS */
+
+.KidBanner{
+  font-family: "Ubuntu", sans-serif !important;
+  padding-top: 40px;
+}
+.KidBanner .style_div{
+  overflow: hidden !important;
+  margin: 0 auto;
+  background-color: #fbd103;
+  position: absolute;
+  border-radius: 3px;
+  z-index: 1;
+  rotate: -1deg;
+  transform:
+    perspective(750px)
+    rotatey(60deg)
+}
+
+/* Mail CSS */
+
+.mail{
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+
+/* Footer CSS */
+
+.footer{
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+.footer a:hover{
+  color: #fbd103;
+}
