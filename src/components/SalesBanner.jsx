@@ -1,10 +1,10 @@
 import "./style.css" ;
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Men from "../assest/Men-Coat.png" ;
 import Kid from "../assest/Kid.png" ;
-import { Container, Grid, Box } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 
 export default function SalesBanner() {

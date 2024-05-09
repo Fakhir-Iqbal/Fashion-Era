@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Button from '@mui/material/Button';
+import { Image } from 'react-bootstrap';
 
 export default function Hero() {
 
@@ -29,7 +30,7 @@ export default function Hero() {
               </div>
             </Grid>
             <Grid xs={0} sm={6} md={7} className='hero-img'>
-              <img src={Hero_img} alt="modal-image" />
+              <Image src={Hero_img} alt="modal-image" />
             </Grid>
           </Grid>
         </Box>

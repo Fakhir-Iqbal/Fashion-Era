@@ -1,9 +1,9 @@
 import "./style.css";
-import { useState, useEffect } from "react";
+import {useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Kid_img from "../assest/image 10.png";
-import { Container, Grid, Box } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Button from "@mui/material/Button";
 
 export default function KidBanner() {
