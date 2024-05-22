@@ -18,36 +18,36 @@ export default function Footer() {
 
           <div className="w-1/2 md:w-[35%]">
             <h1 className="text-3xl">Help</h1>
-            <a href="">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
             <br />
-            <a href="">Shipping Delivery</a>
+            <a href="/">Shipping Delivery</a>
             <br />
-            <a href="">Refund Policy</a>
+            <a href="/">Refund Policy</a>
             <br />
-            <a href="">Track Your Order</a>
+            <a href="/">Track Your Order</a>
             <br />
           </div>
 
           <div className="w-1/2 md:w-[35%]">
             <h1 className="text-3xl">Store</h1>
-            <a href="">Coat / Pent</a>
+            <a href="/">Coat / Pent</a>
             <br />
-            <a href="">Kurta</a>
+            <a href="/">Kurta</a>
             <br />
-            <a href="">Sherwani</a>
+            <a href="/">Sherwani</a>
             <br />
-            <a href="">Other</a>
+            <a href="/">Other</a>
           </div>
 
           <div className="w-1/2 md:w-[35%]">
             <h1 className="text-3xl">Support</h1>
-            <a href="">Feedback</a>
+            <a href="/">Feedback</a>
             <br />
-            <a href="">Contact Us</a>
+            <a href="/">Contact Us</a>
             <br />
-            <a href="">Term & Condition</a>
+            <a href="/">Term & Condition</a>
             <br />
-            <a href="">Download App</a>
+            <a href="/">Download App</a>
           </div>
         </div>
 

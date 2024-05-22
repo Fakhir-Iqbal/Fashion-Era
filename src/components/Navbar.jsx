@@ -19,7 +19,7 @@ function HeaderMenu() {
       <Container fluid className="max-w-screen-xl">
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Brand href="#">
-          <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} />
+          <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
