@@ -4,6 +4,7 @@ import SalesBanner from "./components/SalesBanner";
 import ServiceCard from "./components/ServiceCard";
 import KidBanner from "./components/KidSale-Banner";
 import Brands from "./components/Brands";
+import Productcards from "./components/Cards";
 import Mail from "./components/Email";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +20,7 @@ function App() {
       <SalesBanner />
       <KidBanner />
       <Brands/>
+      <Productcards/>
       <Mail />
       <Footer/>
     </>

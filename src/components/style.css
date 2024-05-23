@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /* navbar CSS */
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif !important;
 }
 .css-lsvjyt-MuiPaper-root{
   border-radius: 0px !important;
@@ -33,7 +33,8 @@ body {
   text-transform: uppercase;
 }
 .hero h1 span:first-child {
-  background-color: #004743;
+  /* background-color: #fbd103; */
+  background-color: black;
   color: white;
 }
 
@@ -110,7 +111,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 71, 67, 0.534);
+    background-color: rgba(0, 0, 0, 0.55);
     z-index: -1;
   }
 }
@@ -175,6 +176,16 @@ body {
 .footer a:hover{
   color: #fbd103;
 }
+@media (max-width: 564px) {
+  .footer_links{
+    text-align: center !important;
+    align-items: center;
+  }
+  
+   
+}
+
+
 
 
 /* Review Section CSS  */
@@ -184,4 +195,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.brands_logos{
+  flex-wrap: nowrap;
+}
+@media (max-width: 564px) {
+  .brands_logos {
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .review{
+    height: auto;
+  }
+  
+   
 }

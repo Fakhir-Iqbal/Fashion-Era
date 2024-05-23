@@ -6,7 +6,6 @@ import { FaCartShopping } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
 import { MdSearch } from "react-icons/md";
 import Nav from "react-bootstrap/Nav";
-import Logo from "./../assest/logo.png";
 import Navbar from "react-bootstrap/Navbar";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
@@ -19,13 +18,14 @@ function HeaderMenu() {
       <Container fluid className="max-w-screen-xl">
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Brand href="#">
-          <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} alt="Logo" />
+          {/* <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} alt="Logo" /> */}
+          <h1 className="h-10 max-w-40 ml-5 mt-1 font-semibold text-[#004743]" >Fashion <span className="text-[#fbd103]" >Era</span></h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="my-2 my-lg-0 text-sm font-semibold text-center gap-3"
+            className="my-2 my-lg-0 ml-10 text-sm font-semibold text-center gap-3"
             navbarScroll
           >
             <Button
@@ -33,7 +33,6 @@ function HeaderMenu() {
               style={{
                 color: "black",
                 fontFamily: "inherit",
-                fontWeight: "bold",
               }}
             >
               Coat/Pent
@@ -43,7 +42,6 @@ function HeaderMenu() {
               style={{
                 color: "black",
                 fontFamily: "inherit",
-                fontWeight: "bold",
               }}
             >
               Sherwani
@@ -53,7 +51,6 @@ function HeaderMenu() {
               style={{
                 color: "black",
                 fontFamily: "inherit",
-                fontWeight: "bold",
               }}
             >
               Kurta/Shalwar
@@ -63,7 +60,6 @@ function HeaderMenu() {
               style={{
                 color: "black",
                 fontFamily: "inherit",
-                fontWeight: "bold",
               }}
             >
               Sale

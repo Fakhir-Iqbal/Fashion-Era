@@ -81,13 +81,13 @@ export default function Mail() {
 
         <div className="flex gap-3 mt-3" >
         <span className="bg-[#f3f3f3] text-sm h-10 w-10 rounded-full flex items-center justify-center">
-          <FaFacebookF className="text-xl " />
+          <FaFacebookF className="text-xl hover:cursor-pointer" />
         </span>
         <span className="bg-[#f3f3f3] text-sm h-10 w-10 rounded-full flex items-center justify-center">
-          <FaInstagram className="text-xl " />
+          <FaInstagram className="text-xl hover:cursor-pointer" />
         </span>
         <span className="bg-[#f3f3f3] text-sm h-10 w-10 rounded-full flex items-center justify-center">
-          <FaTwitter className="text-xl " />
+          <FaTwitter className="text-xl hover:cursor-pointer" />
         </span>
         </div>
       </div>

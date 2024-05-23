@@ -30,7 +30,8 @@ export default function Brands() {
               <h1 className="mt-4" >Top Brand Deal</h1>
               <p>Up To <span className="text-[#fbd103]" >60%</span> Off On Brands</p>
 
-              <div className="flex w-[80%] pt-3 gap-3">
+              <div className="flex w-[80%] pt-3 gap-3 brands_logos">
+
     <div className="bg-white rounded-md w-full h-16" ><img className="object-cover w-full h-full" src={Nike} alt="logos" /></div>
     <div className="bg-white rounded-md w-full h-16" ><img className="object-cover w-full h-full" src={Adidas} alt="logos" /></div>
     <div className="bg-white rounded-md w-full h-16" ><img className="object-cover w-full h-full" src={HM} alt="logos" /></div>
