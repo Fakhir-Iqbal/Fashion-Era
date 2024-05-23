@@ -175,3 +175,13 @@ body {
 .footer a:hover{
   color: #fbd103;
 }
+
+
+/* Review Section CSS  */
+
+.review {
+  font-family: "Ubuntu", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
