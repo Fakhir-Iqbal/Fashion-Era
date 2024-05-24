@@ -17,7 +17,7 @@ body {
 /* Hero CSS */
 
 .hero {
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   max-height: 85vh;
   overflow: hidden;
 }
@@ -102,7 +102,7 @@ body {
     color: rgb(255, 255, 255);
   }
   .hero h1 span:first-child {
-    background-color: #004743;
+    background-color: black;
   }
   .hero::before {
     content: "";
@@ -210,4 +210,16 @@ body {
   }
   
    
+}
+
+
+/* cards section css */
+
+.seemore_links{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease; 
+}
+.seemore_links:hover{
+  color: #fbd103;
 }

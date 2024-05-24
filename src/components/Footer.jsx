@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-4 justify-center">
+    <footer className="flex flex-col gap-4 justify-center bg-[#f6f6f6] pt-4">
       <div className="container mx-auto max-w-screen-xl">
         <div className="flex md:flex-row flex-col gap-4 justify-center md:items-start items-center footer">
           
@@ -36,7 +36,7 @@ export default function Footer() {
             <br />
             <a href="/">Sherwani</a>
             <br />
-            <a href="/">Other</a>
+            {/* <a href="/">Other</a> */}
           </div>
 
           <div className="w-1/2 md:w-[35%] footer_links">
