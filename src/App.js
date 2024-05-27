@@ -5,6 +5,7 @@ import Coat from "./Pages/Coat";
 import Sherwani from "./Pages/Sherwani";
 import Kurta from "./Pages/Kurta";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/kurta" element={<Kurta />} />
         <Route path="/sherwani" element={<Sherwani />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

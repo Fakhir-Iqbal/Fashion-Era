@@ -17,7 +17,7 @@ function HeaderMenu() {
     <Navbar expand="lg" className="w-full sticky-top bg-white main-navbar-div" >
       <Container fluid className="max-w-screen-xl">
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
-        <Navbar.Brand href="#">
+        <Navbar.Brand >
           {/* <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} alt="Logo" /> */}
           <NavLink to="/" className="no-underline" > <h1 className="h-10 max-w-40 ml-5 mt-1 font-semibold text-[#004743]" >Fashion <span className="text-[#fbd103]" >Era</span></h1> </NavLink>
         </Navbar.Brand>
@@ -25,13 +25,14 @@ function HeaderMenu() {
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="my-2 my-lg-0 ml-10 text-sm font-semibold text-center gap-3 pt-3 navbar-links"
+            className="my-2 my-lg-0 ml-10 text-sm font-semibold text-center gap-3 pt-1 navbar-links"
             navbarScroll
           >
             <NavLink to="/coat" className="no-underline text-black" >Coat Pent</NavLink>
             <NavLink to="/sherwani" className="no-underline text-black" >Sherwani</NavLink>
             <NavLink to="/kurta" className="no-underline text-black" >Kurta Pajama</NavLink>
             <NavLink to="/about" className="no-underline text-black" >About</NavLink>
+            <NavLink to="/contact" className="no-underline text-black" >Contact</NavLink>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
