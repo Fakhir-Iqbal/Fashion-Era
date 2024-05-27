@@ -153,18 +153,7 @@ body {
   font-family: "Ubuntu", sans-serif !important;
   padding-top: 40px;
 }
-.KidBanner .style_div{
-  overflow: hidden !important;
-  margin: 0 auto;
-  background-color: #fbd103;
-  position: absolute;
-  border-radius: 3px;
-  z-index: 1;
-  rotate: -1deg;
-  transform:
-    perspective(750px)
-    rotatey(60deg)
-}
+
 
 /* Mail CSS */
 
@@ -212,9 +201,18 @@ body {
 }
 @media (max-width: 564px) {
   .brands_logos {
-    flex-wrap: wrap;
-    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: calc(100%); /* Add some extra width for scrollbar */
     margin-bottom: 20px;
+  }
+  .brands_logos::-webkit-scrollbar {
+    display: none;
+  }
+  .brands_logos > div {
+    flex: 0 0 auto; /* Prevent flex items from growing */
+    margin-right: 10px; /* Add some space between items */
   }
   .review{
     height: auto;

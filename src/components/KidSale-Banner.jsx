@@ -26,7 +26,6 @@ export default function KidBanner() {
                 Baby & Kid's Fashion
               </h1>
               <div className="flex flex-col items-center mt-3">
-                <div className="h-20 w-[290px] sm:w-[400px] style_div"></div>
                 <div className="text-white z-10 mr-9 md:mr-14">
                   <h1 className="font-bold text-black">SALE!</h1>
                   <p className="text-[#004743] text-sm font-semibold mt-0">

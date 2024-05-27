@@ -3,14 +3,14 @@ import { Row, Container } from "react-bootstrap";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import img1 from "./../assest/avtar1.jpg";
-import img2 from "./../assest/avtar2.jpg";
-import img3 from "./../assest/avtar3.jpg";
+// import img2 from "./../assest/avtar2.jpg";
+// import img3 from "./../assest/avtar3.jpg";
 
 export default function Review() {
   const imagesWithText = [
     { image: img1, text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ",name: "Sameer Jain" } ,
-    { image: img2, text: "Numerous versions of Lorem Ipsum exist, but most have undergone some form of alteration, whether through injected humor or the inclusion of randomized words that appear far from believable....",name: "Jhon Wick" },
-    { image: img3, text: "Lorem Ipsum comes in many forms, yet the majority have been altered in some way, either with injected humor or with random words that lack believability. If you're considering using a passage of Lorem Ipsum...", name: "Jacky Hobbs" },
+    { image: img1, text: "Numerous versions of Lorem Ipsum exist, but most have undergone some form of alteration, whether through injected humor or the inclusion of randomized words that appear far from believable....",name: "Jhon Wick" },
+    { image: img1, text: "Lorem Ipsum comes in many forms, yet the majority have been altered in some way, either with injected humor or with random words that lack believability. If you're considering using a passage of Lorem Ipsum...", name: "Jacky Hobbs" },
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
