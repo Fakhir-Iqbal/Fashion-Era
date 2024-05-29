@@ -8,18 +8,18 @@ import { IoMdHeart } from "react-icons/io";
 import { LuShoppingCart } from "react-icons/lu";
 import Img1 from "../assest/smallbackground.jpg";
 import Img2 from "../assest/3piece.jpg";
-import men1 from "../assest/men1.jpg"
-import men2 from "../assest/men2.jpg"
-import men3 from "../assest/men3.jpg"
-import men4 from "../assest/men4.jpg"
-import casual1 from "../assest/casual1.jpg"
-import casual2 from "../assest/casual2.jpg"
-import casual3 from "../assest/casual3.jpg"
-import casual4 from "../assest/casual4.jpg"
-import feature1 from "../assest/Feature1.jpg"
-import feature2 from "../assest/Feature2.jpg"
-import feature3 from "../assest/Feature3.jpg"
-import feature4 from "../assest/Feature4.jpg"
+import men1 from "../assest/CoatImage/men1.jpg"
+import men2 from "../assest/CoatImage/men2.jpg"
+import men3 from "../assest/CoatImage/men3.jpg"
+import men4 from "../assest/CoatImage/men4.jpg"
+import casual1 from "../assest/CoatImage/casual1.jpg"
+import casual2 from "../assest/CoatImage/casual2.jpg"
+import casual3 from "../assest/CoatImage/casual3.jpg"
+import casual4 from "../assest/CoatImage/casual4.jpg"
+import feature1 from "../assest/CoatImage/Feature1.jpg"
+import feature2 from "../assest/CoatImage/Feature2.jpg"
+import feature3 from "../assest/CoatImage/Feature3.jpg"
+import feature4 from "../assest/CoatImage/Feature4.jpg"
 
 const products = [
   {
@@ -161,7 +161,7 @@ const CoatList = () => {
                   <Card.Img
                     variant="top"
                     src={product.images[0]}
-                    class="h-48 md:h-68 cursor-pointer"
+                    class="h-48 md:h-72 cursor-pointer"
                     onClick={() => handleCardClick(product)}
                   />
                   <Card.Body>
@@ -196,7 +196,7 @@ const CoatList = () => {
                   <Card.Img
                     variant="top"
                     src={product.images[0]}
-                    class="h-48 md:h-68 cursor-pointer"
+                    class="h-48 md:h-72 cursor-pointer"
                     onClick={() => handleCardClick(product)}
                   />
                   <Card.Body>
@@ -231,7 +231,7 @@ const CoatList = () => {
                   <Card.Img
                     variant="top"
                     src={product.images[0]}
-                    class="h-48 md:h-68 cursor-pointer"
+                    class="h-48 md:h-72 cursor-pointer"
                     onClick={() => handleCardClick(product)}
                   />
                   <Card.Body>
