@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-center pt-4">
+        <div className="text-center">
           <p className="">
             <hr />
             Copyright© 2024 Fashion Era. All rights reserved.

@@ -1,8 +1,25 @@
 import React, { useState } from "react";
-import { Row, Col, Card, Container, Modal, Button } from "react-bootstrap";
 import Nav from "../components/Navbar";
-import Img from "../assest/Men-Coat.png";
+import Footer from "../components/Footer";
+import ProductModal from "../components/ProductModal";
+import { Row, Col, Card, Container } from "react-bootstrap";
 import { FaRegHeart } from "react-icons/fa6";
+import { IoMdHeart } from "react-icons/io";
+import { LuShoppingCart } from "react-icons/lu";
+import Img1 from "../assest/smallbackground.jpg";
+import Img2 from "../assest/3piece.jpg";
+import men1 from "../assest/men1.jpg"
+import men2 from "../assest/men2.jpg"
+import men3 from "../assest/men3.jpg"
+import men4 from "../assest/men4.jpg"
+import casual1 from "../assest/casual1.jpg"
+import casual2 from "../assest/casual2.jpg"
+import casual3 from "../assest/casual3.jpg"
+import casual4 from "../assest/casual4.jpg"
+import feature1 from "../assest/Feature1.jpg"
+import feature2 from "../assest/Feature2.jpg"
+import feature3 from "../assest/Feature3.jpg"
+import feature4 from "../assest/Feature4.jpg"
 
 const products = [
   {
@@ -10,7 +27,7 @@ const products = [
     name: "Trio Ensemble Coats",
     description: "Stay cozy and stylish in this classic wool coat.",
     price: "$99.99",
-    image: Img,
+    images: [men1, Img1, Img2],
     category: "Men Coat",
   },
   {
@@ -18,13 +35,100 @@ const products = [
     name: "Trio Ensemble Coats",
     description: "Beat the cold with this fashionable faux fur parka.",
     price: "$149.99",
-    image: Img,
+    images: [men2, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 3,
+    name: "Trio Ensemble Coats",
+    description: "Stay cozy and stylish in this classic wool coat.",
+    price: "$99.99",
+    images: [men3, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 4,
+    name: "Trio Ensemble Coats",
+    description: "Beat the cold with this fashionable faux fur parka.",
+    price: "$149.99",
+    images: [men4, Img1, Img2],
+    category: "Men Coat",
+  },
+  // Add more products here...
+];
+const products2 = [
+  {
+    id: 11,
+    name: "Urban Chic Outerwear",
+    description: "Stay cozy and stylish in this classic wool coat.",
+    price: "$99.99",
+    images: [casual1, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 22,
+    name: "Urban Chic Outerwear",
+    description: "Beat the cold with this fashionable faux fur parka.",
+    price: "$149.99",
+    images: [casual2, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 33,
+    name: "Urban Chic Outerwear",
+    description: "Stay cozy and stylish in this classic wool coat.",
+    price: "$99.99",
+    images: [casual3, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 44,
+    name: "Urban Chic Outerwear",
+    description: "Beat the cold with this fashionable faux fur parka.",
+    price: "$149.99",
+    images: [casual4, Img1, Img2],
+    category: "Men Coat",
+  },
+  // Add more products here...
+];
+const products3 = [
+  {
+    id: 111,
+    name: "Easygoing Classic Outerwear",
+    description: "Stay cozy and stylish in this classic wool coat.",
+    price: "$99.99",
+    images: [feature1, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 222,
+    name: "Easygoing Classic Outerwear",
+    description: "Beat the cold with this fashionable faux fur parka.",
+    price: "$149.99",
+    images: [feature2, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 333,
+    name: "Easygoing Classic Outerwear",
+    description: "Stay cozy and stylish in this classic wool coat.",
+    price: "$99.99",
+    images: [feature3, Img1, Img2],
+    category: "Men Coat",
+  },
+  {
+    id: 444,
+    name: "Easygoing Classic Outerwear",
+    description: "Beat the cold with this fashionable faux fur parka.",
+    price: "$149.99",
+    images: [feature4, Img1, Img2],
     category: "Men Coat",
   },
   // Add more products here...
 ];
 
 const CoatList = () => {
+  const [favoriteStatus, setFavoriteStatus] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -33,57 +137,135 @@ const CoatList = () => {
     setShowModal(true);
   };
 
-  return (
-    <div className="bg-gray-200">
-      <Nav />
-      <Container maxWidth="lg" className="p-4">
-        <h1 className="font-bold text-2xl">Mens Collections</h1>
-        <Row xs={1} sm={2} md={4} className="g-4 ">
-          {products.map((product, idx) => (
-            <Col key={idx}>
-              <Card className="mt-3" onClick={() => handleCardClick(product)}>
-                <Card.Img variant="top" src={product.image} style={{ height: "270px" }} />
-                <Card.Body>
-                  <Card.Title className="italic">{product.name}</Card.Title>
-                  <Card.Text className="d-flex justify-content-between align-items-center text-sm">
-                    <span className="mr-auto">Price: {product.price}</span>
-                    <FaRegHeart className="mr-3 text-xl text-red-800 cursor-pointer" />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-      {/* Modal */}
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton className="font-poetsen-one h-[50px]">
-          <Modal.Title>{selectedProduct && selectedProduct.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {selectedProduct && (
-            <div className="flex flex-col justify-center items-center">
-            <div style={{ maxWidth: "100%", height: "250px"}}>
-              <img src={selectedProduct.image} alt={selectedProduct.name} style={{ maxWidth: "100%", height: "100%"}} />
-            </div>
-            <br/>
-            <div className="text-start">
-              <p>Price: {selectedProduct.price}</p>
-              <p>{selectedProduct.description}</p>
-            </div>
-            <div className="text-start w-full flex items-center justify-center">
-  <button className="bg-[#004743] text-white italic h-8">Add to Cart</button>
-</div>
+  const handleToggle = (productId) => {
+    setFavoriteStatus((prevStatus) => ({
+      ...prevStatus,
+      [productId]: !prevStatus[productId], // Toggle favorite status for the product
+    }));
+  };
 
-          </div>
-          
-          )}
-        </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
-        </Modal.Footer> */}
-      </Modal>
-    </div>
+  const isFavorite = (productId) => {
+    return favoriteStatus[productId] || false; // Check if the product is in favorites
+  };
+
+  return (
+    <>
+      <Nav />
+      <div className="bg-gray-200 pb-5">
+        <Container maxWidth="lg" className="p-2 md:p-4">
+          <h1 className="font-black text-3xl pt-4">Mens Collections</h1>
+          <Row xs={2} sm={2} md={4} className=" g-2 md:g-3 lg:g-4">
+            {products.map((product, idx) => (
+              <Col key={idx}>
+                <Card className="mt-3">
+                  <Card.Img
+                    variant="top"
+                    src={product.images[0]}
+                    class="h-48 md:h-68 cursor-pointer"
+                    onClick={() => handleCardClick(product)}
+                  />
+                  <Card.Body>
+                  <Card.Title className="italic">{product.name}</Card.Title>
+                    <Card.Text className="d-flex justify-content-between align-items-center text-sm">
+                      <span className="mr-auto">Price: {product.price}</span>
+                      {isFavorite(product.id) ? (
+                        <IoMdHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      ) : (
+                        <FaRegHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      )}
+                      <LuShoppingCart className="mr-3 text-xl cursor-pointer" />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        <Container maxWidth="lg" className="p-2 md:p-4">
+          <h1 className="font-black text-3xl pt-3">Casual</h1>
+          <Row xs={2} sm={2} md={4} className=" g-2 md:g-3 lg:g-4">
+            {products2.map((product, idx) => (
+              <Col key={idx}>
+                <Card className="mt-3">
+                  <Card.Img
+                    variant="top"
+                    src={product.images[0]}
+                    class="h-48 md:h-68 cursor-pointer"
+                    onClick={() => handleCardClick(product)}
+                  />
+                  <Card.Body>
+                  <Card.Title className="italic">{product.name}</Card.Title>
+                    <Card.Text className="d-flex justify-content-between align-items-center text-sm">
+                      <span className="mr-auto">Price: {product.price}</span>
+                      {isFavorite(product.id) ? (
+                        <IoMdHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      ) : (
+                        <FaRegHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      )}
+                      <LuShoppingCart className="mr-3 text-xl cursor-pointer" />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        <Container maxWidth="lg" className="p-2 md:p-4">
+          <h1 className="font-black text-3xl pt-3">Featured</h1>
+          <Row xs={2} sm={2} md={4} className=" g-2 md:g-3 lg:g-4">
+            {products3.map((product, idx) => (
+              <Col key={idx}>
+                <Card className="mt-3">
+                  <Card.Img
+                    variant="top"
+                    src={product.images[0]}
+                    class="h-48 md:h-68 cursor-pointer"
+                    onClick={() => handleCardClick(product)}
+                  />
+                  <Card.Body>
+                  <Card.Title className="italic">{product.name}</Card.Title>
+                    <Card.Text className="d-flex justify-content-between align-items-center text-sm">
+                      <span className="mr-auto">Price: {product.price}</span>
+                      {isFavorite(product.id) ? (
+                        <IoMdHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      ) : (
+                        <FaRegHeart
+                          className="mr-3 text-xl text-red-800 cursor-pointer"
+                          onClick={() => handleToggle(product.id)}
+                        />
+                      )}
+                      <LuShoppingCart className="mr-3 text-xl cursor-pointer" />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+       
+        <ProductModal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          selectedProduct={selectedProduct}
+        />
+      </div>
+      <Footer />
+    </>
   );
 };
 
