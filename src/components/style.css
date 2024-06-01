@@ -103,7 +103,7 @@ body {
     border-radius: 0;
     z-index: 1;
     position: relative;
-    background-image: url(./../assest/hero2.webp);
+    background-image: url(./../assest/banner.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,6 +152,29 @@ body {
 .KidBanner{
   font-family: "Ubuntu", sans-serif !important;
   padding-top: 40px;
+}
+@media (max-width: 564px) {
+  .background-image {
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    background-image: url(./../assest/hero2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: -1;
+    border-radius: 10px;
+  }
 }
 
 
