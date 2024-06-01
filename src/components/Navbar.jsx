@@ -3,13 +3,13 @@ import Container from "react-bootstrap/Container";
 import { FaRegUser } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
-import { MdSearch } from "react-icons/md";
+// import { MdSearch } from "react-icons/md";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
+// import Paper from "@mui/material/Paper";
+// import InputBase from "@mui/material/InputBase";
+// import Divider from "@mui/material/Divider";
+// import IconButton from "@mui/material/IconButton";
 import { NavLink } from "react-router-dom";
 
 function HeaderMenu() {
@@ -37,7 +37,7 @@ function HeaderMenu() {
         </Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 gap-2 navbar-end align-items-center">
-            <div style={{ position: "relative" }}>
+            {/* <div style={{ position: "relative" }}>
               <Paper
                 component="form"
                 sx={{
@@ -66,7 +66,7 @@ function HeaderMenu() {
                 </IconButton>
                 <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
               </Paper>
-            </div>
+            </div> */}
             <div className="flex justify-center ml-3 gap-1">
               <Nav.Link>
                 <FaCartShopping className="text-xl" />

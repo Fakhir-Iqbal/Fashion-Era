@@ -26,12 +26,33 @@ body {
 
 
 /* Hero CSS */
-
 .hero {
-  background-color: #f6f6f6;
-  max-height: 85vh;
+  border-radius: 0;
+  z-index: 1;
+  position: relative;
+  background-image: url(./../assest/herobg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
+.hero .hero-text {
+  color: rgb(255, 255, 255);
+}
+.hero h1 span:first-child {
+  background-color: black;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
 .hero-text {
   padding: 1.8rem 0px;
   margin-left: 50px;
@@ -71,7 +92,7 @@ body {
   width: 150px !important;
 }
 
-.hero-img {
+/* .hero-img {
   position: relative;
 }
 .hero-img img {
@@ -82,7 +103,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: top;
-}
+} */
 
 @media (max-width: 840px) {
   .hero-text{
