@@ -16,7 +16,7 @@ export default function Brands() {
   }, []);
 
   return (
-    <div className="reviewmain" data-aos="fade-up">
+    <div className="reviewmain" data-aos="fade-up" data-aos-duration="600">
       <Container>
         <Grid container spacing={0} className="flex justify-center">
           <Grid

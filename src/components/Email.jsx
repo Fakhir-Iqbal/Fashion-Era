@@ -22,7 +22,7 @@ export default function Mail() {
 
   return (
     <>
-      <div data-aos="fade-up" className="mail flex flex-col items-center w-full h-[450px]">
+      <div data-aos="fade-up" data-aos-duration="700" className="mail flex flex-col items-center w-full h-[450px]">
         <img
           src={Mail_png}
           alt="Mail Icon"

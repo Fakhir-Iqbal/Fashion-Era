@@ -12,7 +12,7 @@ export default function KidBanner() {
   }, []);
 
   return (
-    <div className="KidBanner" data-aos="fade-up">
+    <div className="KidBanner" data-aos="zoom-in"  data-aos-duration="1000"> 
       <Container>
         <Grid container spacing={0} className="flex justify-center">
           <Grid

@@ -20,7 +20,7 @@ const Productcards = () => {
     <Container maxWidth="lg">
         <h1 className='font-bold pt-5 text-center' >Trending Collections</h1>
         <p className='text-sm text-gray-400 text-center' >Check out most promising product bought by our buyers</p>
-  <Row xs={1} sm={2} md={4} className="g-4 ">
+  <Row xs={1} sm={2} md={4} className="g-4 pl-12 pr-12 md:pl-0 md:pr-0">
     {products.map((product, idx) => (
       <Col key={idx}>
         <Card className='mt-3' >
