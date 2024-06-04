@@ -50,8 +50,8 @@ const Contact = () => {
             Ask Any Question Or Remarks? Just Write Us A Message!
           </p>
         </div>
-        <div className="max-w-lg mx-auto lg:max-w-full lg:flex justify-center gap-3 ">
-        <div className="bg-[#004743] text-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full lg:w-auto">
+        <div className="max-w-lg mx-auto md:max-w-full md:flex justify-center gap-3 bg-black">
+        <div className="bg-[#004743] text-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full md:w-auto lg:w-1/3 xl:w-auto">
             <h1 class="text-3xl font-bold mt-3">Contact Information</h1>
             <p className="text-xs ">Say something to start a live chat!</p>
 
@@ -96,7 +96,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <form
+         <div className="bg-yellow-700 lg:w-1/3 xl:w-auto " >
+         <form
             onSubmit={handleSubmit}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full lg:w-auto"
           >
@@ -163,6 +164,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
+         </div>
         </div>
       </div>
       <Footer />
