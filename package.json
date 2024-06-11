@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "components": "^0.1.0",
+    "firebase": "^10.12.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",

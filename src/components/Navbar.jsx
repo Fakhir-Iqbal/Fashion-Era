@@ -75,7 +75,7 @@ function HeaderMenu() {
                 <GiSelfLove className="text-xl" />
               </Nav.Link>
               <Nav.Link>
-                <FaRegUser className="text-xl" />
+              <NavLink to="/signup" className="no-underline text-black"><FaRegUser className="text-xl" /></NavLink>
               </Nav.Link>
             </div>
           </Nav>
