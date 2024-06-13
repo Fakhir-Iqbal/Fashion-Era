@@ -7,6 +7,7 @@ import Kurta from "./Pages/Kurta";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Signup from "./Pages/Signup";
+import Login from "./Pages/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

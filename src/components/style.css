@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&display=swap");
 /* navbar CSS */
 body {
   font-family: "Ubuntu", sans-serif !important;
 }
-.main-navbar-div{
+.main-navbar-div {
   /* background-color: #004743; */
-  font-family: 'Poetsen One', cursive !important;
+  font-family: "Poetsen One", cursive !important;
 }
-.navbar-links{
+.navbar-links {
   /* background-color: #fbd103; */
-  font-family: 'Fira Sans', sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
 }
-.css-lsvjyt-MuiPaper-root{
+.css-lsvjyt-MuiPaper-root {
   border-radius: 0px !important;
 }
 .navbar-toggler {
@@ -23,7 +23,6 @@ body {
 .navbar-toggler-icon {
   font-size: small;
 }
-
 
 /* Hero CSS */
 .hero {
@@ -91,6 +90,16 @@ body {
   height: 40px !important;
   width: 150px !important;
 }
+.logout-button {
+  font-family: inherit !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  background-color: #004743 !important;
+  border-radius: 7px !important;
+  height: 35px !important;
+  width: 120px !important;
+}
 
 /* .hero-img {
   position: relative;
@@ -106,7 +115,7 @@ body {
 } */
 
 @media (max-width: 840px) {
-  .hero-text{
+  .hero-text {
     margin-left: 0px;
   }
 }
@@ -148,14 +157,13 @@ body {
   }
 }
 
-
 /* Sales Banner CSS */
 
-.SaleBanner{
+.SaleBanner {
   font-family: "Ubuntu", sans-serif !important;
 }
 
-.order-btn{
+.order-btn {
   background-color: white !important;
   color: black !important;
   font-family: inherit !important;
@@ -167,10 +175,9 @@ body {
   width: 150px !important;
 }
 
-
 /* Kid Banner CSS */
 
-.KidBanner{
+.KidBanner {
   font-family: "Ubuntu", sans-serif !important;
   padding-top: 40px;
 }
@@ -192,23 +199,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
     border-radius: 10px;
   }
 }
 
-
 /* Mail CSS */
 
-.mail{
+.mail {
   font-family: "Ubuntu", sans-serif !important;
 }
 
-
 /* Footer CSS */
 
-.footer{
+.footer {
   font-family: "Ubuntu", sans-serif !important;
 }
 
@@ -217,20 +222,15 @@ body {
   color: black;
   transition: color 0.3s ease;
 }
-.footer a:hover{
+.footer a:hover {
   color: #fbd103;
 }
 @media (max-width: 564px) {
-  .footer_links{
+  .footer_links {
     text-align: center !important;
     align-items: center;
   }
-  
-   
 }
-
-
-
 
 /* Review Section CSS  */
 
@@ -240,7 +240,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.brands_logos{
+.brands_logos {
   flex-wrap: nowrap;
 }
 @media (max-width: 564px) {
@@ -258,21 +258,18 @@ body {
     flex: 0 0 auto; /* Prevent flex items from growing */
     margin-right: 10px; /* Add some space between items */
   }
-  .review{
+  .review {
     height: auto;
   }
-  
-   
 }
-
 
 /* cards section css */
 
-.seemore_links{
+.seemore_links {
   text-decoration: none;
   color: black;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
-.seemore_links:hover{
+.seemore_links:hover {
   color: #fbd103;
 }
