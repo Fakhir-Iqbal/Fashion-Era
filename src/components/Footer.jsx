@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function Footer() {
@@ -6,48 +7,45 @@ export default function Footer() {
     <footer className="flex flex-col gap-4 justify-center bg-[#f6f6f6] pt-4">
       <div className="container mx-auto max-w-screen-xl">
         <div className="flex md:flex-row flex-col gap-4 justify-center md:items-start items-center footer">
-          
           <div className="w-full md:w-1/2 flex flex-col gap-3 footer_links">
             {/* <img src={Mail_png} alt="logo" className="h-10 w-1/2 md:w-[70%]" /> */}
-            <h1 className="text-3xl font-semibold text-[#004743]" >Fashion <span className="text-[#fbd103]" >Era</span></h1>
+            <h1 className="text-3xl font-semibold text-[#004743]">
+              Fashion <span className="text-[#fbd103]">Era</span>
+            </h1>
             <p className="w-[70%]">
               There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some.
+              majority have suffered alteration in some.
             </p>
           </div>
 
           <div className="w-1/2 md:w-[35%] footer_links">
             <h1 className="text-3xl">Help</h1>
-            <a href="/">Privacy Policy</a>
+            <Link to="/">Privacy Policy</Link>
             <br />
-            <a href="/">Shipping Delivery</a>
+            <Link to="/">Shipping Delivery</Link>
             <br />
-            <a href="/">Refund Policy</a>
-            <br />
-            <a href="/">Track Your Order</a>
+            <Link to="/">Refund Policy</Link>
             <br />
           </div>
 
           <div className="w-1/2 md:w-[35%] footer_links">
             <h1 className="text-3xl">Store</h1>
-            <a href="/">Coat / Pent</a>
+            <Link to="/coat">Coat / Pent</Link>
             <br />
-            <a href="/">Kurta</a>
+            <Link to="/kurta">Kurta</Link>
             <br />
-            <a href="/">Sherwani</a>
+            <Link to="/sherwani">Sherwani</Link>
             <br />
-            {/* <a href="/">Other</a> */}
+            {/* <Link to="/">Other</Link> */}
           </div>
 
           <div className="w-1/2 md:w-[35%] footer_links">
             <h1 className="text-3xl">Support</h1>
-            <a href="/">Feedback</a>
+            <Link to="/">Feedback</Link>
             <br />
-            <a href="/">Contact Us</a>
+            <Link to="/">Contact Us</Link>
             <br />
-            <a href="/">Term & Condition</a>
-            <br />
-            <a href="/">Download App</a>
+            <Link to="/">Term & Condition</Link>
           </div>
         </div>
 

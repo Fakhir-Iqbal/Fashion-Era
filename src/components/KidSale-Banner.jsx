@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import banner from "../assest/salebanner.png";
 import { Container, Grid } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 export default function KidBanner() {
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function KidBanner() {
   }, []);
 
   return (
-    <div className="KidBanner" data-aos="zoom-in"  data-aos-duration="1000"> 
+    <div className="KidBanner" data-aos="zoom-in" data-aos-duration="1000">
       <Container>
         <Grid container spacing={0} className="flex justify-center">
           <Grid
@@ -33,12 +33,13 @@ export default function KidBanner() {
                 when you spend a minimum of $100.
               </p>
 
-              <Button
+              <Link
                 variant="contained"
-                className="shop-button bg-[#004743] mt-2"
+                className="order-btn !bg-[#004743] text-white"
+                to="/coat"
               >
                 Shop Now
-              </Button>
+              </Link>
             </div>
 
             <div className="overflow-hidden w-1/2 hidden md:block">
