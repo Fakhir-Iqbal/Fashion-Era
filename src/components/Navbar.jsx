@@ -4,13 +4,8 @@ import { FaRegUser } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
 import { RiLogoutCircleRLine } from "react-icons/ri";
-// import { MdSearch } from "react-icons/md";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import Paper from "@mui/material/Paper";
-// import InputBase from "@mui/material/InputBase";
-// import Divider from "@mui/material/Divider";
-// import IconButton from "@mui/material/IconButton";
 import { NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
 import { auth } from "../Firebase/firebase";
@@ -45,13 +40,12 @@ function HeaderMenu() {
 
   return (
     <Navbar expand="lg" className="w-full sticky-top bg-white main-navbar-div">
-      <Container fluid className="max-w-screen-xl">
+      <Container fluid className="max-w-screen-2xl">
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Brand>
-          {/* <img className="h-10 max-w-40 ml-5 mt-1" src={Logo} alt="Logo" /> */}
           <NavLink to="/" className="no-underline">
             {" "}
-            <h1 className="h-10 max-w-40 ml-5 mt-1 font-semibold text-[#004743]">
+            <h1 className="h-10 max-w-40 mt-1 font-semibold text-[#004743]">
               Fashion <span className="text-[#fbd103]">Era</span>
             </h1>{" "}
           </NavLink>
@@ -60,7 +54,7 @@ function HeaderMenu() {
         <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="my-2 my-lg-0 ml-10 text-sm font-semibold text-center gap-3 pt-1 navbar-links"
+            className="my-2 my-lg-0 ml-5 text-sm font-semibold text-center gap-3 pt-1 navbar-links"
             navbarScroll
           >
             <NavLink to="/coat" className="no-underline text-black">
@@ -82,36 +76,6 @@ function HeaderMenu() {
         </Navbar.Collapse>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 gap-2 navbar-end align-items-center">
-            {/* <div style={{ position: "relative" }}>
-              <Paper
-                component="form"
-                sx={{
-                  display: "flex",
-                  width: "200px",
-                  borderBottom: "1px solid black",
-                  height: "35px",
-                  boxShadow: "none",
-                }}
-              >
-                <InputBase
-                  sx={{ ml: 3, flex: 1 }}
-                  placeholder="ᴛʏᴘᴇ ᴛᴏ ꜱᴇᴀʀᴄʜ..."
-                  inputProps={{ '"Ubuntu", sans-serif': "Enter Your Mail" }}
-                />
-                <IconButton
-                  type="button"
-                  sx={{
-                    position: "relative",
-                    marginTop: "3px",
-                    left: "5px",
-                  }}
-                  aria-label="search"
-                >
-                  <MdSearch className="text-xl" />
-                </IconButton>
-                <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-              </Paper>
-            </div> */}
             <div className="flex justify-center ml-3 gap-1">
               <Nav.Link>
                 <FaCartShopping className="text-xl" />

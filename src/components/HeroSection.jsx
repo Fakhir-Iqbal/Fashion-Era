@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className="hero !max-w-screen-2xl !mx-auto !rounded-md">
       <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg" className="main">
